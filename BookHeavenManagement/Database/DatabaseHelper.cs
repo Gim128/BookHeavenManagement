@@ -11,7 +11,7 @@ namespace BookHeavenManagement.Database
 {
     public static class DatabaseHelper
     {
-        private static string connectionString = ConfigurationManager.ConnectionStrings["BookHEavenConnection"].ConnectionString;
+        private static string connectionString = ConfigurationManager.ConnectionStrings["BookHeavenConnection"].ConnectionString;
 
         public static DataTable ExecuteQuery(string query, SqlParameter[]? parameters = null)
         {
