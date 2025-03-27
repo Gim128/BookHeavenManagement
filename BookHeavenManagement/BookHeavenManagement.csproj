@@ -10,9 +10,12 @@
 
   <ItemGroup>
     <Folder Include="Database\Scripts\" />
-    <Folder Include="Forms\" />
-    <Folder Include="Utilities\" />
-    <Folder Include="Services\" />
+    <Folder Include="Forms\Books\" />
+    <Folder Include="Forms\Customers\" />
+    <Folder Include="Forms\Admin\" />
+    <Folder Include="Forms\Reports\" />
+    <Folder Include="Forms\Suppliers\" />
+    <Folder Include="Forms\Sales\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -7,7 +7,7 @@ using Microsoft.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 
-namespace BookHeavenManagement.Database
+namespace BookHeavenManagement.Utilities
 {
     public static class DatabaseHelper
     {
