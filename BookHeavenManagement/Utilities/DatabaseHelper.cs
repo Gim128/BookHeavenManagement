@@ -67,5 +67,24 @@ namespace BookHeavenManagement.Utilities
             }
             return result;
         }
+
+        public static int ExecuteNonQuery(string query, SqlParameter[] parameters)
+        {
+            string connectionString = "Your_Connection_String_Here";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    if (parameters != null)
+                    {
+                        command.Parameters.AddRange(parameters);
+                    }
+
+                    connection.Open();
+                    return command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
